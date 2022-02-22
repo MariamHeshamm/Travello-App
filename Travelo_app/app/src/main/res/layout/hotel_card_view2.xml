@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:background="@color/logo_background"
+
+    app:cardCornerRadius="@dimen/cardview_custom_radius"
+
+    app:cardElevation="10dp"
+
+
+    app:cardUseCompatPadding="true"
+
+    >
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <ImageView
+            android:id="@+id/hotel_main_image"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/continental_main" />
+
+        <Button
+        android:id="@+id/like_btn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/ic_baseline_favorite_red_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/hotel_card_name_ii"
+            android:layout_width="255dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="124dp"
+            android:text="Sunrise Aqua Joy Resort"
+            android:textColor="#FDFBFB"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+        android:id="@+id/custom_card_hotel_rate_ii"
+        android:layout_width="93dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_baseline_star_24"
+        android:text="TextView"
+        android:textColor="#F1ECEC"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_card_name_ii" />
+
+    <TextView
+        android:id="@+id/hotel_card_price_ii"
+        android:layout_width="92dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+        android:text="TextView"
+        android:textColor="#EDE8E8"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@+id/custom_card_hotel_rate_ii"
+        app:layout_constraintTop_toBottomOf="@+id/hotel_card_name_ii" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="370dp"
+            android:layout_height="105dp"
+            android:layout_marginBottom="32dp"
+            android:scaleType="centerCrop"
+
+            app:layout_constraintBottom_toBottomOf="@id/hotel_main_image"
+
+            app:layout_constraintEnd_toEndOf="@id/hotel_main_image"
+            app:layout_constraintStart_toStartOf="@id/hotel_main_image"
+            app:srcCompat="@drawable/black_gradient"
+            tools:srcCompat="@drawable/black_gradient" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

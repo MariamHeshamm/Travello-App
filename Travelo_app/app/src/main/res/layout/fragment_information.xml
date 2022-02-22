@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.main.fragments.InformationFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingTop="10dp"
+            android:text="Information"
+            android:textColor="#000000"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Offering exclusive seafront accommodations, Kempinski Hotel overlooks one of Soma Bay’s finest beaches. It features several swimming pools set within lagoons, a lazy river, a fitness center and a spa with hot tub, sauna and massage facilities.
+"
+            android:textColor="#000000"
+            android:textSize="20dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/wifi_facility"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            android:background="@drawable/bold"
+            android:drawableLeft="@drawable/wifi"
+            android:padding="4dp"
+            android:text="Wifi"
+            android:textColor="@color/logo_background"
+            android:backgroundTint="@color/brown"
+            android:textSize="27dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/pool_facility"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bold"
+            android:drawableLeft="@drawable/ic_baseline_pool_24"
+            android:padding="4dp"
+            android:text="Pool"
+            android:textColor="@color/logo_background"
+            android:backgroundTint="@color/brown"
+            android:textSize="27dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/pet_facility"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bold"
+            android:drawableLeft="@drawable/ic_no_pets"
+            android:padding="4dp"
+            android:text="Pets"
+            android:textColor="@color/logo_background"
+            android:backgroundTint="@color/brown"
+            android:textSize="27dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>

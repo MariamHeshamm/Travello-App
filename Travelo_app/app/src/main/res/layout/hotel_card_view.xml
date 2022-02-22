@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textStart"
+    app:cardCornerRadius="@dimen/cardview_custom_radius"
+    android:background="@color/logo_background"
+
+    app:cardElevation="@dimen/cardview_custom_elevation"
+
+
+    app:cardUseCompatPadding="true">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/custom_hotel_rate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_baseline_star_24"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/custom_hotel_price"
+            app:layout_constraintTop_toBottomOf="@+id/custom_hotel_name_tv" />
+
+        <ImageView
+            android:id="@+id/custom_hotel_image"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/kempinski_main" />
+
+        <TextView
+            android:id="@+id/custom_hotel_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="110dp"
+            android:text="Sunrise Aqua Joy Resort"
+
+
+            android:textColor="#121212"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="parent"
+
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/custom_hotel_price"
+            android:layout_width="70dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="16dp"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:text="TextView"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/custom_hotel_name_tv" />
+
+        <Button
+            android:id="@+id/like_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/ic_baseline_favorite_red_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

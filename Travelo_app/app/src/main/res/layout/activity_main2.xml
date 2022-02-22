@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/header"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="@drawable/header"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Reservation"
+                android:textColor="@color/logo_background"
+                android:textSize="40dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:orientation="vertical"
+            android:background="@color/logo_background"
+            android:padding="5dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_dest">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_location_city_24"
+                    android:hint="Where to"
+                    android:inputType="text"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_Checkin"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+                    android:inputType="text"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:hint="Check-in date"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_Checkout">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_calendar_today_24"
+                    android:inputType="number"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:hint="Check-out date"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_peoplenum">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_people_24"
+                    android:inputType="number"
+                    android:clickable="true"
+                    android:ems="10"
+                    android:hint="Enter number of persons per room"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_roomnum">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_king_bed_24"
+                    android:inputType="number"
+                    android:ems="10"
+                    android:hint="Rooms"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="false"
+                app:counterEnabled="true"
+                android:id="@+id/et_Cupon">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/cuopon"
+                    android:inputType="text"
+                    android:ems="10"
+                    android:hint="Apply Cuopon"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+
+                    android:backgroundTint="#377C4545"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Trip feeses:"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="20sp" />
+                <TextView
+                    android:id="@+id/tv_fees"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+
+                    android:backgroundTint="#377C4545"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:textColor="?attr/colorControlNormal"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_Reserve"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_style"
+                android:textAlignment="center"
+                android:textColor="@color/logo_background"
+                android:text="Reserve"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

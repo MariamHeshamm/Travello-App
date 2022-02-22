@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/header"
+    >
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/header"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Welcome back"
+            android:textColor="@color/logo_background"
+            android:textSize="40dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="sans-serif-thin"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:orientation="vertical"
+        android:background="@color/logo_background"
+        android:padding="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_horizontal">
+
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:errorEnabled="false"
+    app:counterEnabled="true"
+    android:id="@+id/et_email">
+    
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:hint="Email"
+        android:inputType="text"/>
+
+</com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorEnabled="false"
+            app:counterEnabled="true"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/et_password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/password"
+                android:hint="Password"
+                android:inputType="numberPassword"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <CheckBox
+            android:id="@+id/rememberbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me "
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="18sp"
+            android:layout_marginLeft="-105dp"/>
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:background="@drawable/button_style"
+            android:textColor="@color/logo_background"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR Sign in with"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:layout_width="191dp"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/facebook_logo" />
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/google_plus" />
+
+            <ImageView
+                android:layout_width="42dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/twitter_logo" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+
+            android:text="Forgotten your password?"
+            android:textAlignment="center"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Sign up for Travello"
+            android:textAlignment="center"
+            android:textColor="?attr/colorControlNormal"
+            android:textSize="20dp"
+            android:layout_marginTop="15dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="129dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/user" />
+
+
+</RelativeLayout>
